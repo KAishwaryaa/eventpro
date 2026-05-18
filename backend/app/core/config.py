@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     "http://localhost:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://resonant-marshmallow-f44195.netlify.app"
+    "https://fastidious-bombolone-704ca1.netlify.app"
 ]
 
     model_config = {
