@@ -1,0 +1,13 @@
+{
+  "name": "event-management-fullstack",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "cd frontend && npm install",
+    "setup": "cd backend && pip install -r requirements.txt && python init_db.py && python seed_db.py",
+    "dev": "concurrently --kill-others --names \"BACKEND,FRONTEND\" --prefix-colors \"blue,green\" \"cd backend && python run.py\" \"cd frontend && npm run dev\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
